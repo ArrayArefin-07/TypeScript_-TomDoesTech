@@ -1,4 +1,8 @@
-function myFunction(props){
+interface Input {
+    name: string;
+}
+
+function myFunction(props: Input){
     return props;
 }
 
