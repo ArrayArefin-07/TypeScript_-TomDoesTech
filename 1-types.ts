@@ -24,3 +24,21 @@ async function myFunction(input:MyInterfaceTwo): Promise<MyInterface> {
 
 
 // ------------- type----------
+
+type MyType = {
+    property1: string;
+
+}
+
+// can't extend interface randomly 
+// we can include by using & symbol
+type MyTypeTwo = {
+    property2: boolean
+} & MyType;
+
+
+
+async function myFunction(input:MyTypeTwo): Promise<MyTypeTwo> {
+    return input;
+    
+}
