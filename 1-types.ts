@@ -33,12 +33,23 @@ type MyType = {
 // can't extend interface randomly 
 // we can include by using & symbol
 type MyTypeTwo = {
-    property2: boolean
+    property2: boolean;
+    property3: MyEnum
 } & MyType;
 
+//enumerators 
+// enum are js object
+
+enum MyEnum{
+    enumOne = 'enumOne',
+    enumTwo = 'enumTwo'
+}
 
 
 async function myFunction(input:MyTypeTwo): Promise<MyTypeTwo> {
     return input;
     
 }
+
+// enum is javascript object so call it in this way
+Object.values(MyEnum).map
