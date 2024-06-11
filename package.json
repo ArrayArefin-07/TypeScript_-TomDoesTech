@@ -6,7 +6,7 @@
     "license": "MIT",
     "scripts": {
         "build": "tsc",
-        "dev": "ts-node app.js"
+        "dev": "ts-node app.ts"
     },
     "devDependencies": {
         "ts-node": "^10.9.2",
